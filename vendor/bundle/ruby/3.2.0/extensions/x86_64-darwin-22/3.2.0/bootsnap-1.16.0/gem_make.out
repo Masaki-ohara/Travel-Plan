@@ -1,0 +1,18 @@
+current directory: /Users/oharamasaki/workspace/trabel/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+/Users/oharamasaki/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/oharamasaki/workspace/trabel/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230913-39985-6wpqlu sitelibdir\=./.gem.20230913-39985-6wpqlu clean
+
+current directory: /Users/oharamasaki/workspace/trabel/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230913-39985-6wpqlu sitelibdir\=./.gem.20230913-39985-6wpqlu
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/oharamasaki/workspace/trabel/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230913-39985-6wpqlu sitelibdir\=./.gem.20230913-39985-6wpqlu install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20230913-39985-6wpqlu/bootsnap
+
+current directory: /Users/oharamasaki/workspace/trabel/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230913-39985-6wpqlu sitelibdir\=./.gem.20230913-39985-6wpqlu clean

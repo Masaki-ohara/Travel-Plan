@@ -1,0 +1,108 @@
+current directory: /Users/oharamasaki/workspace/Travel-Plan/vendor/bundle/ruby/3.2.0/gems/mysql-2.9.1/ext/mysql_api
+/Users/oharamasaki/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+checking for mysql_ssl_set()... yes
+checking for rb_str_set_len()... yes
+checking for rb_thread_start_timer()... no
+checking for mysql.h... yes
+creating Makefile
+
+current directory: /Users/oharamasaki/workspace/Travel-Plan/vendor/bundle/ruby/3.2.0/gems/mysql-2.9.1/ext/mysql_api
+make DESTDIR\= sitearchdir\=./.gem.20230914-36052-2subjp sitelibdir\=./.gem.20230914-36052-2subjp clean
+
+current directory: /Users/oharamasaki/workspace/Travel-Plan/vendor/bundle/ruby/3.2.0/gems/mysql-2.9.1/ext/mysql_api
+make DESTDIR\= sitearchdir\=./.gem.20230914-36052-2subjp sitelibdir\=./.gem.20230914-36052-2subjp
+compiling mysql.c
+mysql.c:79:2: error: unknown type name 'my_bool'
+        my_bool *is_null;
+        ^
+mysql.c:173:30: error: call to undeclared function 'rb_tainted_str_new2'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    rb_iv_set(e, "sqlstate", rb_tainted_str_new2(mysql_sqlstate(m)));
+                             ^
+mysql.c:200:51: error: call to undeclared function 'rb_tainted_str_new2'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    rb_iv_set(obj, "name", f->name? rb_str_freeze(rb_tainted_str_new2(f->name)): Qnil);
+                                                  ^
+mysql.c:204:41: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+    rb_iv_set(obj, "length", INT2NUM(f->length));
+                             ~~~~~~~ ~~~^~~~~~
+mysql.c:205:45: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+    rb_iv_set(obj, "max_length", INT2NUM(f->max_length));
+                                 ~~~~~~~ ~~~^~~~~~~~~~
+mysql.c:297:12: error: call to undeclared function 'rb_tainted_str_new2'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    return rb_tainted_str_new2(mysql_get_client_info());
+           ^
+mysql.c:313:20: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+    return INT2NUM(mysql_get_client_version());
+           ~~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+mysql.c:361:5: error: use of undeclared identifier 'my_bool'
+    my_bool b;
+    ^
+mysql.c:391:10: error: use of undeclared identifier 'MYSQL_SET_CLIENT_IP'; did you mean 'MYSQL_SET_CHARSET_DIR'?
+    case MYSQL_SET_CLIENT_IP:
+         ^~~~~~~~~~~~~~~~~~~
+         MYSQL_SET_CHARSET_DIR
+/usr/local/Cellar/mysql/8.1.0/include/mysql/mysql.h:176:3: note: 'MYSQL_SET_CHARSET_DIR' declared here
+  MYSQL_SET_CHARSET_DIR,
+  ^
+mysql.c:398:10: error: use of undeclared identifier 'MYSQL_SECURE_AUTH'; did you mean 'MYSQL_DEFAULT_AUTH'?
+    case MYSQL_SECURE_AUTH:
+         ^~~~~~~~~~~~~~~~~
+         MYSQL_DEFAULT_AUTH
+/usr/local/Cellar/mysql/8.1.0/include/mysql/mysql.h:187:3: note: 'MYSQL_DEFAULT_AUTH' declared here
+  MYSQL_DEFAULT_AUTH,
+  ^
+mysql.c:400:6: error: use of undeclared identifier 'b'
+            b = 1;
+            ^
+mysql.c:402:6: error: use of undeclared identifier 'b'
+            b = 0;
+            ^
+mysql.c:403:14: error: use of undeclared identifier 'b'
+        v = (char*)&b;
+                    ^
+mysql.c:391:10: error: duplicate case value 'MYSQL_SET_CHARSET_DIR'
+    case MYSQL_SET_CLIENT_IP:
+         ^
+mysql.c:384:10: note: previous case defined here
+    case MYSQL_SET_CHARSET_DIR:
+         ^
+mysql.c:472:12: error: call to undeclared function 'rb_tainted_str_new2'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    return rb_tainted_str_new2(mysql_character_set_name(GetHandler(obj)));
+           ^
+mysql.c:537:12: error: call to undeclared function 'rb_tainted_str_new2'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    return rb_tainted_str_new2(mysql_get_host_info(GetHandler(obj)));
+           ^
+mysql.c:549:12: error: call to undeclared function 'rb_tainted_str_new2'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    return rb_tainted_str_new2(mysql_get_server_info(GetHandler(obj)));
+           ^
+mysql.c:556:15: error: call to undeclared function 'rb_tainted_str_new2'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    return p? rb_tainted_str_new2(p): Qnil;
+              ^
+mysql.c:591:23: error: call to undeclared function 'rb_tainted_str_new2'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+        rb_ary_store(ret, i, rb_tainted_str_new2(mysql_fetch_row(res)[0]));
+                             ^
+mysql.c:588:9: warning: implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'unsigned int' [-Wshorten-64-to-32]
+    n = mysql_num_rows(res);
+      ~ ^~~~~~~~~~~~~~~~~~~
+mysql.c:636:23: error: call to undeclared function 'rb_tainted_str_new2'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+        rb_ary_store(ret, i, rb_tainted_str_new2(mysql_fetch_row(res)[0]));
+                             ^
+mysql.c:633:9: warning: implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'unsigned int' [-Wshorten-64-to-32]
+    n = mysql_num_rows(res);
+      ~ ^~~~~~~~~~~~~~~~~~~
+mysql.c:700:12: error: call to undeclared function 'rb_tainted_str_new2'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    return rb_tainted_str_new2(s);
+           ^
+mysql.c:716:20: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+    return INT2NUM(mysql_thread_id(GetHandler(obj)));
+           ~~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mysql.c:773:20: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+    return INT2NUM(mysql_get_server_version(GetHandler(obj)));
+           ~~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mysql.c:867:12: error: call to undeclared function 'rb_tainted_str_new2'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    return rb_tainted_str_new2(mysql_sqlstate(m));
+           ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+7 warnings and 20 errors generated.
+make: *** [mysql.o] Error 1
+
+make failed, exit code 2

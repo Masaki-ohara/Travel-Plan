@@ -1,0 +1,18 @@
+current directory: /Users/oharamasaki/workspace/trabel/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+/Users/oharamasaki/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/oharamasaki/workspace/trabel/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230913-38394-4bmikp sitelibdir\=./.gem.20230913-38394-4bmikp clean
+
+current directory: /Users/oharamasaki/workspace/trabel/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230913-38394-4bmikp sitelibdir\=./.gem.20230913-38394-4bmikp
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/oharamasaki/workspace/trabel/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230913-38394-4bmikp sitelibdir\=./.gem.20230913-38394-4bmikp install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20230913-38394-4bmikp
+
+current directory: /Users/oharamasaki/workspace/trabel/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230913-38394-4bmikp sitelibdir\=./.gem.20230913-38394-4bmikp clean
